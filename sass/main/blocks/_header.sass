@@ -1,0 +1,73 @@
+.header
+	position: fixed
+	width: 100%
+	background: rgba(24, 48, 71, 0.6)
+	margin: 0
+	padding: 0
+	padding-top: 6px
+	padding-bottom: 16px
+	z-index: 15
+	&__contacts
+		display: flex
+		justify-content: space-between
+		margin-bottom: 20px
+	&__navbar
+		margin: auto
+.contacts
+	&__image
+		margin-right: 5px
+	&__map
+		width: 14px
+		height: 19px
+	&__phone
+		width: 17px
+		height: 17px
+	&__mail
+		width: 20px
+		height: 15px
+	&__VK
+		width: 27px
+		height: 27px
+	&__IG
+		width: 27px
+		height: 27px
+	&__link
+		display: flex
+		align-items: center
+		font-size: 14px
+		color: $light
+		font-weight: 500
+		line-height: 15px
+	&__item:last-child
+		display: flex
+		flex-wrap: no-wrap
+.navbar
+	max-width: 806px
+	&__menu
+		display: flex
+		justify-content: space-between
+	&__button
+		border: none
+		background: none
+		font-weight: 500
+		font-size: 18px
+		line-height: 22px
+		color: $light
+		cursor: pointer
+		&::after
+			content: ""
+			display: block
+			height: 3px
+			transition: 0.3s
+			width: 0%
+			background-color: #B9B0B0
+		&:hover
+			&::after
+				width: 100%
+
+.burger
+	display: none
+
+.scroll
+	background: rgb(68, 87, 104)
+	transition: 0.3s

@@ -1,0 +1,160 @@
+.rev-book
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+._sending
+
+.booking
+	position: relative
+	border: 1px solid #B9B0B0
+	box-sizing: border-box
+	box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25)
+	border-radius: 15px
+	padding-top: 26px
+	padding-bottom: 43px
+	padding-right: 29px
+	padding-left: 29px
+	text-align: center
+	border: 1px solid black
+	width: 432px
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(51,51,51,0.9) url("../img/loading-buffering.gif") center / 50px no-repeat
+		border-radius: 15px
+		opacity: 0
+		visibility: hidden
+	&._sending::after
+		opacity: 1
+		visibility: visible
+	&__header
+		margin-bottom: 18px
+		font-weight: bold
+		font-size: 24px
+		line-height: 27px
+		color: #231F20
+	&__description
+		display: block
+		width: 217px
+		margin: 0 auto
+		font-weight: 300
+		font-size: 18px
+		line-height: 22px
+		margin-bottom: 20px
+	&__name,&__phone, &__hotel
+		display: block
+		border: 1px solid #B9B0B0
+		color: $black
+		box-sizing: border-box
+		box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25)
+		border-radius: 15px
+		padding-top: 14px
+		padding-left: 5px
+		padding-right: 7px
+		padding-bottom: 14px
+		background: rgba(196, 196, 196, 0.42) !important
+		width: 100%
+	&__phone, &__name
+		&._error
+			box-shadow: 0 0 15px red
+	&__name
+		margin-bottom: 21px
+	&__phone
+		margin-bottom: 21px
+	&__hotel
+		margin-bottom: 30px
+	&__button
+		width: 208px
+		padding: 9px 4px
+		background-color: $text
+		border-radius: 10px
+		color: $light
+		cursor: pointer
+.reviews
+	border: 1px solid #B9B0B0
+	box-sizing: border-box
+	box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25)
+	border-radius: 15px
+	padding-top: 10px
+	padding-left: 20px
+	padding-right: 50px
+	&__swiper
+		width: 567px
+		height: 425px
+		overflow: hidden
+	&__item
+		height: 100% !important
+		position: relative
+	&__date
+		font-weight: 300
+		font-size: 13px
+		line-height: 16px
+		color: $black
+	&__header
+		font-weight: bold
+		font-size: 24px
+		line-height: 27px
+		color: $black
+		margin-top: 2px
+		margin-bottom: 30px
+		text-align: center
+	&__author, &__score
+		display: block
+		font-size: 18px
+		line-height: 22px
+		color: #000000
+		margin-bottom: 4px
+		padding-left: 44px
+	&__score
+		margin-bottom: 18px
+	&__positive
+		display: flex
+		margin-bottom: 40px
+		font-size: 14px
+		line-height: 17px
+		color: $black
+		padding-left: 44px
+		text-align: justify
+		width: 520px
+		&::before
+			content: url('../img/plus.svg')
+			margin-right: 7px
+	&__negative
+		display: flex
+		font-size: 14px
+		line-height: 17px
+		color: $black
+		text-align: justify
+		padding-left: 44px
+		&::before
+			content: url('../img/minus.svg')
+			margin-right: 7px
+	&__from
+		position: absolute
+		right: 10px
+		bottom: 27px
+	&-button
+		background: transparent
+		border: none
+		top: 50%
+		transform: translateY(-50%)
+		width: 60px
+		height: 100px
+		background-repeat: no-repeat
+		background-position: center
+		&::after
+			content: none
+		&-prev
+			background-image: url("../img/reviews-prev.svg")
+			left: -15px
+			top: 55%
+		&-next
+			background-image: url("../img/reviews-next.svg")
+			right: -15px
+			top: 55%

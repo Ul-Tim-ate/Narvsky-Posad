@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Comfortaa&family=Montserrat:wght@300;400;500;600&family=Vollkorn&display=swap"
+      rel="stylesheet"
+    />
+    <link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon" />
+    <title>Нарвский Посад</title>
+  </head>
+  <body>
+    <div class="burger-wrapper">
+      <div class="burger"><span></span></div>
+    </div>
+    <header class="header" id="showScroll">
+      <div class="container">
+        <ul class="header__contacts contacts">
+          <li class="contacts__item">
+            <a
+              href="https://www.google.com/maps/place/%D0%9D%D0%B0%D1%80%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+%D0%9F%D0%BE%D1%81%D0%B0%D0%B4/@59.8963236,30.2788565,17z/data=!3m1!4b1!4m5!3m4!1s0x469631bf8fc66a5d:0x5418c2592e51b118!8m2!3d59.8961693!4d30.2811485"
+              class="contacts__link"
+              target="_blank"
+            >
+              <img
+                src="img/mark.svg"
+                alt="Геопозиция"
+                class="contacts__map contacts__image"
+              />
+              Россия, Санкт-Петербург, ул. Швецова, д. 8
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+79818325486" class="contacts__link">
+              <img
+                src="img/phone.svg"
+                alt="Номер телефона"
+                class="contacts__phone contacts__image"
+              />
+              +7-981-832-54-86</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:narvkiyp@gmail.com" class="contacts__link">
+              <img
+                src="img/mail.svg"
+                alt="Почта"
+                class="contacts__mail contacts__image"
+              />
+              narvkiyp@gmail.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="#" class="contacts__link">
+              <img
+                src="img/vk.svg"
+                alt="Вк"
+                class="contacts__VK contacts__image"
+            /></a>
+            <a href="#" class="contacts__link"
+              ><img src="img/inst.svg" alt="Инстаграм" class="contacts__IG" />
+            </a>
+          </li>
+        </ul>
+
+        <!-- header__contacts -->
+        <nav class="header__navbar navbar">
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a data-goto=".wellcome" href="#" class="navbar__button">О Нас</a>
+            </li>
+            <li class="navbar__item">
+              <a data-goto=".hotel-cards" href="#" class="navbar__button"
+                >Номера</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a
+                data-goto=".conveniences__header"
+                href="#"
+                class="navbar__button"
+                >Услуги</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a data-goto=".booking" href="#" class="navbar__button"
+                >Забронировать</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a data-goto=".adress" href="#" class="navbar__button"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hotel-name">
+      <div class="name-wrapper">
+        <div class="hotel-name__info">
+          <h1 class="hotel-name__header">Нарвский посад</h1>
+          <p class="hotel-name__description">
+            Уютный апарт-отель в историческом районе города
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="wellcome">
+      <div class="container">
+        <div class="wellcome-wrapper">
+          <!-- Slider main container -->
+          <div class="wellcome__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide__image"
+                  src="img/wellcome-slide1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide__image"
+                  src="img/wellcome-slide2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide__image"
+                  src="img/wellcome-slide3.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <button class="swiper-button swiper-button-prev"></button>
+            <button class="swiper-button swiper-button-next"></button>
+          </div>
+          <div class="wellcome__text">
+            <h2 class="wellcome__header">
+              Добро пожаловать в
+              <span class="wellcome__hotel-name">Нарвский&nbsp;Посад</span>
+            </h2>
+            <p class="wellcome__description">
+              Наш апарт-отель находится недалеко от центра города, рядом с
+              Нарвскими воротами. Это&nbsp;исторический район, со своей особой
+              атмосферой. Все&nbsp;апартаменты оснащены качественной и дорогой
+              мебелью, чтобы создать для наших гостей ощущение домашнего уюта.
+            </p>
+          </div>
+        </div>
+        <!-- /.wellcome-wrapper -->
+      </div>
+      <!-- container -->
+    </section>
+    <section class="scores">
+      <div class="container">
+        <div class="scores-wrapper">
+          <h2 class="scores__header">Оценка отеля на различных площадках</h2>
+          <div class="scores__results results">
+            <div class="results__item">
+              <img src="img/star.svg" alt="" class="results__star" />
+              <div class="results__number">8.8</div>
+              <!-- results__number -->
+              <div class="results__source">Hotels.com</div>
+              <!-- results__source -->
+            </div>
+            <!-- results__item -->
+            <div class="results__item">
+              <img src="img/star.svg" alt="" class="results__star" />
+              <div class="results__number">9.5</div>
+              <!-- results__number -->
+              <div class="results__source">101Hotels.com</div>
+              <!-- results__source -->
+            </div>
+            <!-- results__item -->
+            <div class="results__item">
+              <img src="img/star.svg" alt="" class="results__star" />
+              <div class="results__number">9</div>
+              <!-- results__number -->
+              <div class="results__source">Booking.com</div>
+              <!-- results__source -->
+            </div>
+            <!-- results__item -->
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="hotel-cards">
+      <div class="container">
+        <div class="hotel-cards-wrapper">
+          <h2 class="hotel-cards__header">Виды aпартаментов</h2>
+          <!-- Slider main container -->
+          <div class="hotel-cards__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-cards__item">
+                <div class="hotel-cards__wrapper-image">
+                  <img
+                    src="img/hotel-cards-slide3.jpg"
+                    alt="Фотография однокомнатных "
+                    class="hotel-cards__image"
+                  />
+                </div>
+                <div class="hotel-cards__text-wrapper">
+                  <h3 class="hotel-cards__name">Студия “Кing”</h3>
+                  <div class="hotel-cards__advantages advantages">
+                    <img src="img/wifi.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/kettle.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img src="img/iron.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/hairdryer.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img src="img/TV.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/conditioner.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/phone1.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/kitchen.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/washer.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                  </div>
+                  <!-- /.advanteges -->
+                  <div class="hotel-cards__sale">2500 руб/сутки</div>
+                  <a href="king.html" target="_blank" class="hotel-cards__btn"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <!-- hotel-cards__item -->
+              <div class="swiper-slide hotel-cards__item">
+                <div class="hotel-cards__wrapper-image">
+                  <img
+                    src="img/hotel-cards-slide2.jpg"
+                    alt="Фотография однокомнатных "
+                    class="hotel-cards__image"
+                  />
+                </div>
+                <div class="hotel-cards__text-wrapper">
+                  <h3 class="hotel-cards__name">Студия “Twin”</h3>
+                  <div class="hotel-cards__advantages advantages">
+                    <img src="img/wifi.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/kettle.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img src="img/iron.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/hairdryer.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img src="img/TV.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/conditioner.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/phone1.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/kitchen.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/washer.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                  </div>
+                  <!-- /.advanteges -->
+                  <div class="hotel-cards__sale">2500 руб/сутки</div>
+                  <a href="king.html" target="_blank" class="hotel-cards__btn"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <!-- hotel-cards__item -->
+              <div class="swiper-slide hotel-cards__item">
+                <div class="hotel-cards__wrapper-image">
+                  <img
+                    src="img/hotel-cards-slide1.jpg"
+                    alt="Фотография однокомнатных "
+                    class="hotel-cards__image"
+                  />
+                </div>
+                <div class="hotel-cards__text-wrapper">
+                  <h3 class="hotel-cards__name">Однокомнатные апартаменты</h3>
+                  <div class="hotel-cards__advantages advantages">
+                    <img src="img/wifi.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/kettle.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img src="img/iron.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/hairdryer.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img src="img/TV.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/conditioner.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/phone1.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/kitchen.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/washer.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                  </div>
+                  <!-- /.advantages -->
+                  <div class="hotel-cards__sale">6500 руб/сутки</div>
+                  <a href="king.html" target="_blank" class="hotel-cards__btn"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <!-- hotel-cards__item -->
+              <div class="swiper-slide hotel-cards__item">
+                <div class="hotel-cards__wrapper-image">
+                  <img
+                    src="img/hotel-cards-slide4.jpg"
+                    alt="Фотография однокомнатных "
+                    class="hotel-cards__image"
+                  />
+                </div>
+                <div class="hotel-cards__text-wrapper">
+                  <h3 class="hotel-cards__name">Студия с тремя кроватями</h3>
+                  <div class="hotel-cards__advantages advantages">
+                    <img src="img/wifi.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/kettle.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img src="img/iron.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/hairdryer.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img src="img/TV.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/conditioner.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/phone1.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/kitchen.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/washer.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                  </div>
+                  <!-- /.advanteges -->
+                  <div class="hotel-cards__sale">2500 руб/сутки</div>
+                  <a href="king.html" target="_blank" class="hotel-cards__btn"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <!-- hotel-cards__item -->
+              <div class="swiper-slide hotel-cards__item">
+                <div class="hotel-cards__wrapper-image">
+                  <img
+                    src="img/hotel-cards-slide5.jpg"
+                    alt="Фотография однокомнатных "
+                    class="hotel-cards__image"
+                  />
+                </div>
+                <div class="hotel-cards__text-wrapper">
+                  <h3 class="hotel-cards__name">Двухкомнатные апартаменты</h3>
+                  <div class="hotel-cards__advantages advantages">
+                    <img src="img/wifi.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/kettle.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img src="img/iron.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/hairdryer.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img src="img/TV.svg" alt="" class="advantages__image" />
+                    <img
+                      src="img/conditioner.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/phone1.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/kitchen.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                    <img
+                      src="img/washer.svg"
+                      alt=""
+                      class="advantages__image"
+                    />
+                  </div>
+                  <!-- /.advanteges -->
+                  <div class="hotel-cards__sale">7500 руб/сутки</div>
+                  <a href="king.html" target="_blank" class="hotel-cards__btn"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <!-- hotel-cards__item -->
+            </div>
+            <!-- If we need navigation buttons -->
+          </div>
+          <div class="hotel-cards__buttons">
+            <button
+              class="room-swiper-button room-swiper-button__prev swiper-button-prev"
+            ></button>
+            <button
+              class="room-swiper-button room-swiper-button__next swiper-button-next"
+            ></button>
+          </div>
+          <!-- swiper-wrapper -->
+        </div>
+        <!-- hotel-cards-wrapper -->
+      </div>
+    </section>
+    <section class="conveniences">
+      <div class="container">
+        <h2 class="conveniences__header">Удобства и услуги</h2>
+        <ul class="conveniences__list">
+          <li class="conveniences__item">
+            <img
+              src="img/cleaning.svg"
+              alt="Изображение швабры и ведра"
+              class="conveniences__img"
+            />
+            <hr class="conveniences__line" />
+            <span class="conveniences__description">Уборка номеров</span>
+          </li>
+          <li class="conveniences__item">
+            <img
+              src="img/parking.svg"
+              alt="Изображение припаркованного автомобиля"
+              class="conveniences__img"
+            />
+            <hr class="conveniences__line" />
+            <span class="conveniences__description">Бесплатная парковка</span>
+          </li>
+          <li class="conveniences__item">
+            <img
+              src="img/wifi2.svg"
+              alt="Значок Wifi"
+              class="conveniences__img"
+            />
+            <hr class="conveniences__line" />
+            <span class="conveniences__description">Бесплатный WiFi</span>
+          </li>
+          <li class="conveniences__item">
+            <img
+              src="img/bed.svg"
+              alt="Изображение мебели"
+              class="conveniences__img"
+            />
+            <hr class="conveniences__line" />
+            <span class="conveniences__description">Полная меблировка</span>
+          </li>
+          <li class="conveniences__item">
+            <img
+              src="img/airport.svg"
+              alt="Изображение такси"
+              class="conveniences__img"
+            />
+            <hr class="conveniences__line" />
+            <span class="conveniences__description">Такси до аэропорта</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="rev-book">
+      <div class="container">
+        <div class="rev-book-wrapper">
+          <section class="reviews">
+            <!-- Slider main container -->
+            <div class="swiper rev-book__reviews reviews__swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide reviews__item">
+                  <span class="reviews__date">Дата: 08.09.2019</span>
+                  <h3 class="reviews__header">Отзывы</h3>
+                  <span class="reviews__author">Автор: Олег</span>
+                  <span class="reviews__score">Оценка: 10</span>
+                  <p class="reviews__positive">
+                    Отличная квартира, квалифицированно отремонтирована,
+                    грамотно оборудована и обставлена. Очень тихо, есть все
+                    необходимое как для короткого пребывания так и для
+                    продолжительной остановки. Всегда есть места для парковки
+                    автомобиля. Хозяйка дружелюбна, предоставляет полную
+                    информацию. С удовольствие будем здесь останавливаться и
+                    далее.
+                  </p>
+                  <p class="reviews__negative">Не нашли</p>
+                  <span class="reviews__from">booking.com</span>
+                </div>
+                <div class="swiper-slide reviews__item">
+                  <span class="reviews__date">Дата: 28.07.2019</span>
+                  <h3 class="reviews__header">Отзывы</h3>
+                  <span class="reviews__author">Автор: Гость с Hotel.com</span>
+                  <span class="reviews__score">Оценка: 10</span>
+                  <p class="reviews__positive">
+                    Находится отель в десяти минутах от метро, рядом есть
+                    продуктовые магазины.Сам отель очень тихий, персонал учтивый
+                    и доброжелательный, апартаменты выше всяких похвал. Все
+                    чистое, новенькое. Порадовало наличие стиральной машины.
+                    Ставлю 5+, обязательно приеду ещё
+                  </p>
+                  <p class="reviews__negative">Не нашли</p>
+                  <span class="reviews__from">hotels.com</span>
+                </div>
+              </div>
+              <button
+                class="swiper-button swiper-button-prev reviews-button-prev"
+              ></button>
+              <button
+                class="swiper-button swiper-button-next reviews-button-next"
+              ></button>
+            </div>
+          </section>
+          <section class="rev-book__booking booking" id="booking-form">
+            <form action="send.php" class="booking__form" id="forms">
+              <h3 class="booking__header">Забронировать</h3>
+              <span class="booking__description"
+                >оставьте заявку, мы&nbsp;с&nbsp;вами свяжемся</span
+              >
+              <input
+                type="text"
+                class="booking__name _req _name"
+                placeholder="Имя"
+                name="name"
+              />
+              <input
+                type="text"
+                class="booking__phone _req _phone"
+                placeholder="Телефон"
+                name="phone"
+              />
+              <input
+                type="text"
+                class="booking__hotel"
+                placeholder="Желаемые номер и даты"
+                name="hotel"
+              />
+              <button class="booking__button" type="submit" id="bookingButton">
+                Отправить
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section class="adress">
+      <div class="adress-wrapper">
+        <div class="adress__contacts">
+          <h2 class="adress__header">Контакты</h2>
+          <span class="adress__where adress__item"
+            >Адрес: Санкт-Петербург, ул. Швецова, д. 8
+          </span>
+          <span class="adress__phone adress__item"
+            >Телефон: +7-981-832-54-86
+          </span>
+          <span class="adress__mail adress__item"
+            >Почта: narvkiyp@gmail.com
+          </span>
+          <span class="adress__social adress__item"
+            >Мы с социальных сетях:</span
+          >
+          <ul class="adress__social-list social-list">
+            <li class="social-list__item">
+              <a href="">
+                <img src="img/Ig-adress.svg" alt="Ссылка на Инстаграм" />
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="">
+                <img src="img/vk-adress.svg" alt="Ссылка на Вконтакте" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="adress__map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A4beca30d09b151297b10626dc77d5e6195786a625325d4743450a3e693865754&amp;source=constructor"
+            width="100%"
+            height="100%"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__info">
+          <p class="footer__adress">
+            © 2022. Апарт-отель
+            <span class="footer__name">Нарвский Посад</span>. Санкт-Петербург
+          </p>
+          <ul class="footer__list-ref">
+            <li>
+              <a href="#" class="footer__button" data-goto=".hotel-cards"
+                >Номера</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__button" data-goto=".wellcome">О нас</a>
+            </li>
+            <li>
+              <a href="#" class="footer__button" data-goto=".booking"
+                >Забронировать</a
+              >
+            </li>
+          </ul>
+        </div>
+        <span class="footer__pay"> Мы принимаем:</span>
+        <div class="footer__pay-img">
+          <img
+            src="img/visa.svg"
+            alt="Принимаем карты Visa"
+            class="footer__pay-images"
+          />
+          <img
+            src="img/mastercard.svg"
+            alt="Принимаем карты Mastercard"
+            class="footer__pay-images"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+</html>

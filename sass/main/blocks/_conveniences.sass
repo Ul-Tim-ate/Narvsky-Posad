@@ -1,0 +1,37 @@
+.conveniences
+	padding-top: 120px
+	padding-bottom: 120px
+	&__header
+		font-size: 36px
+		line-height: 40px
+		color: $black
+		text-align: center
+		margin-bottom: 75px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__item
+		width: 150px
+		text-align: center
+		margin-bottom: 10px
+		&:nth-last-child(even)
+			color: #9C3835
+		&:nth-last-child(odd)
+			.conveniences__line
+				background-color: #9C3835
+	&__img
+		height: 70px
+		width: 70px
+		margin-bottom: 22px
+	&__line
+		height: 1.5px
+		width: 40px
+		background-color: $black
+		margin: auto
+	&__description
+		display: block
+		font-weight: 600
+		font-size: 14px
+		line-height: 17px
+		margin-top: 30px

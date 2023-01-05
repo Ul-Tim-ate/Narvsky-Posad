@@ -1,0 +1,83 @@
+.hotel-cards
+	&__swiper
+		width: 100%
+		height: 370px
+	&__header
+		text-align: center
+		font-family: Comfortaa
+		font-size: 35px
+		margin-bottom: 35px
+	&__item
+		border: 1px solid #B9B0B0
+		border-radius: 4px
+		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+		padding: 15px 11px 15px 11px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+	&__text-wrapper
+		min-height: 170px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+	&__name
+		text-align: center
+		font-size: 18px
+	&__wrapper-image
+		width: 250px
+		height: 130px
+		margin-bottom: 15px
+	&__image
+		object-fit: cover
+		width: 100%
+		height: 100%
+		border-radius: 10px
+	&__sale
+		font-size: 18px
+		line-height: 18px
+	&__btn
+		background: none
+		padding: 7px 25px
+		border: 1px solid #9C3835
+		box-sizing: border-box
+		border-radius: 4px
+		font-weight: 300
+		font-size: 19px
+		line-height: 20px
+		cursor: pointer
+	&__buttons
+		display: flex
+		justify-content: space-between
+		max-width: 150px
+		margin: auto
+		margin-top: 30px
+.advantages
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	max-width: 200px
+	&__image
+		width: 23px
+		height: 23px
+		margin-right: 7px
+		margin-bottom: 5px
+.room-swiper-button
+	background: none
+	position: static
+	width: 50px
+	height: 50px
+	border: 2px solid #000000
+	&__next
+		background: url("../img/hotel-cards-next.svg")
+		background-size: 30px
+		background-position: center
+		background-repeat: no-repeat
+	&__prev
+		background: url("../img/hotel-cards-prev.svg")
+		background-size: 30px
+		background-position: center
+		background-repeat: no-repeat
+	&::after
+		content: none
